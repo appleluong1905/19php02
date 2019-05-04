@@ -33,6 +33,7 @@ header {
 	font-weight: bold;
 	width: 800px;
 	margin: 0 auto;
+	background-color: #e0e0e0;
 }
 footer {
 	height: 50px;
@@ -42,4 +43,5 @@ footer {
 	font-weight: bold;
 	width: 800px;
 	margin: 0 auto;
+	background-color: #ada;
 }

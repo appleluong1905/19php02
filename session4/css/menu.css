@@ -1,0 +1,24 @@
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+ul li {
+	list-style-type: none;
+	border: 1px solid blue;
+	width: 200px;
+	padding: 10px;
+	margin: 10px;
+}
+ul li.active {
+	background: #ada;
+}
+p {
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 20px;
+}
+#menu {
+	border: 2px solid black;
+	width: 325px;
+	height: 280px;
+}

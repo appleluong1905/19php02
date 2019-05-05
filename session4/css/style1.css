@@ -1,0 +1,39 @@
+ul li {
+	list-style-type: circle;
+}
+ol li {
+	list-style-type: upper-roman;
+}
+ul li.php02 {
+	list-style-image: url('../img/icon.gif');
+	font-size: 20px;
+}
+ul li:nth-child(4) {
+	list-style-image: url('../img/icon.gif');
+	color: red;
+	font-weight: bold;
+}
+img {
+	width: 100px;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color: green;
+}
+a:hover {
+	color: red;
+}
+a:visited {
+	color: yellow;
+}
+#content {
+	height: 700px;
+}
+#qa {
+	height: 500px;
+}
+#test {
+	height: 500px;
+}

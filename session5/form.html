@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form - Session 5</title>
+</head>
+<body>
+	<form name="myRegisterForm" action="#" method="POST">
+		<p>
+			<input type="hidden" name="my_id" value="189749572395487234">
+		</p>
+		<p>Name:
+			<input type="text" name="name" placeholder="Please input your name">
+		</p>
+		<p>Username:
+			<input type="text" name="username" placeholder="Please input your username">
+		</p>
+		<p>Email:
+			<input type="text" name="email" placeholder="demo@example.com">
+		</p>
+		<p>Password:
+			<input type="password" name="password">
+		</p>
+		<p>Gender
+			<input type="radio" name="gender" value="male"> Male
+			<input type="radio" name="gender" value="female" checked> Female
+			<input type="radio" name="gender" value="other"> Other
+		</p>
+		<p>Faviourites
+			<input type="checkbox" name="film" value="Film"> Film
+			<input type="checkbox" name="shopping" value="Shopping" checked> Shopping
+			<input type="checkbox" name="readbook" value="Read book" checked> Read book
+		</p>
+		<p> City
+			<select name="city">
+			  <option value="">Choose city</option>
+				<option value="danang" selected>Da Nang</option>
+				<option value="quangtri">Quang Tri</option>
+				<option value="quangnam">Quang Nam</option>
+			</select>
+		</p>
+		<p> About us
+			<textarea name="about" rows="10" cols="40"></textarea>
+		</p>
+		<p> Avatar
+			<input type="file" name="avatar">
+		</p>
+		<p>
+			<input type="submit" name="register" value="Register Form">
+		</p>
+		<p>
+			<input type="button" name="registerTest" value="Register Test">
+		</p>
+		<p>
+			<input type="reset" name="registerRest" value="Reset Button">
+		</p>
+		<p>
+			<input type="image" src="img/buy.png" name="registerRest">
+		</p>
+	</form>
+</body>
+</html>

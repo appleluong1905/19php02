@@ -1,0 +1,23 @@
+@font-face {
+  font-family: myNewFont;
+  src: url('../fonts/Aclonica.ttf');
+}
+p {
+	color: red !important;
+}
+p.demo1 {
+	font-family: Arial;
+	/*text-decoration: line-through;*/
+	font-size: 30px;
+	text-shadow: 4px 4px 3px green;
+}
+p.demo2 {
+	font-family: myNewFont;
+	font-weight: bold;
+	text-indent: 20px;
+	text-transform: lowercase;
+}
+p {
+	color: green;
+	font-size: 20px;
+}

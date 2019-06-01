@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello javascript - Session 8</title>
+	<style type="text/css">
+		img {
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 5 viec ma javascript lam tren trang web -->
+
+	<!-- 1. Thay doi noi dung HTML -->
+	<p id="demo1">Hello javascript</p>
+	<a href="#" onclick="document.getElementById('demo1').innerHTML = 'Hello 19PHP02'">Change content</a>
+
+	<!-- 2. Thay doi thuoc tinh HTML -->
+	<img src="girlxinh.jpg" alt="Image" id="demo2">
+	<a href="#" onclick="document.getElementById('demo2').src = 'messi.jpg'">Change image</a>
+
+	<!-- 3. Thay doi style HTML -->
+	<p id="demo3">Hello 19PHP02</p>
+	<a href="#" onclick="document.getElementById('demo3').style.fontSize = '30px'">Change style</a>
+
+
+	<!-- 4. An doi tuong HTML -->
+	<p id="demo4">Hello 19PHP02</p>
+	<a href="#" onclick="document.getElementById('demo4').style.display = 'none'">Hide content</a>
+	
+	<!-- 5. Hien thi doi tuong HTML -->
+	<a href="#" onclick="document.getElementById('demo4').style.display = 'block'">Show content</a>
+</body>
+</html>

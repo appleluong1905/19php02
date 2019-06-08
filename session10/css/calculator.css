@@ -1,0 +1,24 @@
+h1 {
+	text-align: center;
+}
+.calculator {
+	width: 400px;
+	margin: 0 auto;
+}
+button {
+	width: 55px;
+	height: 55px;
+	margin: 5px;
+}
+.button1 {
+	width: 124px;
+}
+#result {
+  border: 1px solid black;
+  width: 328px;
+  margin: 5px;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 5px;
+  font-size: 25px;
+}

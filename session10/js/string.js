@@ -65,6 +65,20 @@ function splitLastName(name) {
 	var lastName = name.substring(lastSpace, name.length);
 	return lastName;
 }
+function checkCharInName(checkChar, name) {
+	if (name.indexOf(checkChar) != -1) {
+		return true;
+	}
+	return false;
+}
+function checkCharInNameNotUpperLower(checkChar, name) {
+	var name = name.toLowerCase();
+	var checkChar = checkChar.toLowerCase();
+	if (name.indexOf(checkChar) != -1) {
+		return true;
+	}
+	return false;
+}
 var myName = prompt("Please enter your name", "Luong Minh Canh");
 document.write("1. Ho va ten cua ban la: " + myName);
 
@@ -76,7 +90,23 @@ document.write("<br>Ten cua ban la: "
  + splitLastName(myName));
 document.write("<br>Ten dem cua ban la: "
  + splitMiddleName(myName));
+
 var middleName = splitMiddleName(myName);
+var lastName   = splitLastName(myName);
+
 document.write('<br>4. Viet hoa ten dem la:' 
 	+ middleName.toUpperCase());
+
+var yesNoInName = checkCharInName('n', lastName)?'Co':'Khong';
+
+document.write('<br>5.' + yesNoInName +' ky tu n trong ten cua ban');
+
+// phan biet hoa thuong
+var yesNoInName = checkCharInNameNotUpperLower('n', lastName)?'Co':'Khong';
+
+document.write('<br>5. '+ yesNoInName +' ky tu n trong ten cua ban ma khong phan biet hoa thuong');
+
+
+
+
 

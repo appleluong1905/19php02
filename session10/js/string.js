@@ -79,6 +79,19 @@ function checkCharInNameNotUpperLower(checkChar, name) {
 	}
 	return false;
 }
+function checkCharInFullName(checkChar, fullName){
+	var checkChar = checkChar.toLowerCase();
+	var fullName = fullName.toLowerCase();
+	var count = 0;
+	var tmpName = '';
+	while (fullName.indexOf(checkChar) != -1) {
+		count++;
+		tmpName = fullName.substring(fullName.indexOf(checkChar) 
+			+ checkChar.length, fullName.length)
+		fullName = tmpName;
+	}
+	return count;
+}
 var myName = prompt("Please enter your name", "Luong Minh Canh");
 document.write("1. Ho va ten cua ban la: " + myName);
 
@@ -106,6 +119,9 @@ var yesNoInName = checkCharInNameNotUpperLower('n', lastName)?'Co':'Khong';
 
 document.write('<br>5. '+ yesNoInName +' ky tu n trong ten cua ban ma khong phan biet hoa thuong');
 
+document.write('<br>6. Thay the ten bang 19PHP02 la: ' 
+	+ myName.replace(lastName, ' 19PHP02'));
+document.write('<br>7. Co '+ checkCharInFullName('n', myName) + ' n trong ten cua ban')
 
 
 

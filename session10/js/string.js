@@ -76,4 +76,7 @@ document.write("<br>Ten cua ban la: "
  + splitLastName(myName));
 document.write("<br>Ten dem cua ban la: "
  + splitMiddleName(myName));
+var middleName = splitMiddleName(myName);
+document.write('<br>4. Viet hoa ten dem la:' 
+	+ middleName.toUpperCase());
 

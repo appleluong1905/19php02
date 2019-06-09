@@ -94,8 +94,7 @@ function checkCharInFullName(checkChar, fullName){
 }
 
 function changeColorCharInName(checkChar, name) {
-	var checkCharLower = checkChar.toLowerCase();
-	var nameLower = name.toLowerCase();
+	var nameLower = name;
 	var newName = '';
 	var newNameTmp = '';
 	var lastPosition = 0;

@@ -92,6 +92,27 @@ function checkCharInFullName(checkChar, fullName){
 	}
 	return count;
 }
+
+function changeColorCharInName(checkChar, name) {
+	var checkCharLower = checkChar.toLowerCase();
+	var nameLower = name.toLowerCase();
+	var newName = '';
+	var newNameTmp = '';
+	var lastPosition = 0;
+	while (nameLower.indexOf(checkChar) != -1) {
+		newNameTmp = nameLower.substring(0, nameLower.indexOf(checkChar)) 
+		+ '<span>' + checkChar + '</span>';
+		nameLower = nameLower.substring(nameLower.indexOf(checkChar) + 1, nameLower.length);
+		newName += newNameTmp;
+	}
+	console.log('-----cau 8--------');
+	console.log(name.lastIndexOf(checkChar));
+	console.log(name.length);
+	if (name.lastIndexOf(checkChar) < name.length) {
+		newName += name.substring(name.lastIndexOf(checkChar) + 1, name.length);
+	}
+	return newName;
+}
 var myName = prompt("Please enter your name", "Luong Minh Canh");
 document.write("1. Ho va ten cua ban la: " + myName);
 
@@ -123,6 +144,8 @@ document.write('<br>6. Thay the ten bang 19PHP02 la: '
 	+ myName.replace(lastName, ' 19PHP02'));
 document.write('<br>7. Co '+ checkCharInFullName('n', myName) + ' n trong ten cua ban')
 
+//document.write('<br>8. ' + myName.replace('n', '<span>n</span>'));
 
+//document.write('<br>Ex. Luo<span>n</span>g Mi<span>n</span>h Ca<span>n</span>h');
 
-
+document.write('<br>8. ' + changeColorCharInName('n', myName));

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ban co vua - Session 13</title>
+	<style type="text/css">
+		.bancovua {
+			width: 320px;
+			margin: 0 auto;
+			border: 1px solid black;
+			height: 320px;
+		}
+		.black {
+			width: 40px;
+			height: 40px;
+			float: left;
+			background-color: black;
+		}
+		.white {
+			width: 40px;
+			height: 40px;
+			float: left;
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>Ban co vua</h1>
+	<div class="bancovua">
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+				
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+		<div class="white"></div>
+		<div class="black"></div>
+
+	</div>
+	<pre>
+	*
+	***
+	*****
+	*******
+	*********
+	***********
+	</pre>
+	<pre>
+	     *
+	    ***
+	   *****
+	  *******
+	 *********
+	*********** 
+	</pre>
+<script type="text/javascript">
+	m = 6;
+	for (var i = 0; i <= m; i++) {
+		for (var j = 0; j < 2*i-1; j++) {
+			document.write('*');
+		}
+		document.write('<br>');
+	}
+
+
+
+	document.write('<br>');
+	n = 6;
+	for (var i = 1; i <= n; i++) {
+		for (var j = 0; j < n-i; j++) {
+			document.write('&nbsp&nbsp');
+		}
+		for ( var k = 0; k < 2*i-1; k++) {
+			document.write('*');
+		}
+		document.write('<br>');
+	}
+	document.write('<br>');
+
+
+
+	document.write("<div class='bancovua'>");
+	for (var i = 0; i < 8; i++) {
+		for (var j = 0; j < 8; j++) {
+			if ((i + j)%2) {
+				document.write("<div class='white'></div>");
+			} else {
+				document.write("<div class='black'></div>");
+			}
+		}
+	}
+	document.write('</div>');
+	document.getElementById('demo');
+
+</script>
+</body>
+</html>
